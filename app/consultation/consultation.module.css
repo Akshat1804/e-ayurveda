@@ -1,0 +1,408 @@
+.consultationPage {
+  padding: 60px 0;
+  background-color: var(--background-light);
+  min-height: calc(100vh - 200px);
+}
+
+.consultationContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.consultationHeader {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.consultationTitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.consultationSubtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Tabs */
+.tabsContainer {
+  padding: 30px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid var(--cream);
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab:hover {
+  color: var(--primary-green);
+}
+
+.activeTab {
+  color: var(--primary-green);
+}
+
+.activeTab::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-green);
+}
+
+/* Form Styles */
+.consultationForm {
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  margin-bottom: 25px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+.formTextarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--light-brown);
+  border-radius: 8px;
+  background-color: var(--cream);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--primary-green);
+}
+
+/* File Upload */
+.fileUploadContainer {
+  margin-bottom: 25px;
+}
+
+.fileUploadLabel {
+  display: block;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadBox {
+  border: 2px dashed var(--light-brown);
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  background-color: var(--cream);
+}
+
+.uploadBox:hover {
+  border-color: var(--primary-green);
+  background-color: rgba(248, 244, 227, 0.7);
+}
+
+.uploadPrompt {
+  color: var(--text-color);
+}
+
+.uploadText {
+  font-size: 1.1rem;
+  margin: 15px 0 10px;
+  font-weight: 500;
+}
+
+.uploadHint {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.filePreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-green);
+}
+
+.fileName {
+  font-weight: 500;
+  margin: 10px 0 5px;
+  word-break: break-all;
+}
+
+.fileSize {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* Error Message */
+.errorMessage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e53935;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: rgba(229, 57, 53, 0.1);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.demoModeMessage {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ff9800;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: rgba(255, 152, 0, 0.1);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.demoModeMessage svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Submit Button */
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Results Section */
+.resultsContainer {
+  padding: 30px;
+  background-color: var(--cream);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.successIcon {
+  color: var(--primary-green);
+}
+
+.resultsTitle {
+  font-size: 1.5rem;
+  color: var(--dark-green);
+}
+
+.recommendationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.recommendationCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.recommendationTitle {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--dark-green);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--cream);
+}
+
+.recommendationText {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.learnMoreLink {
+  display: inline-block;
+  color: var(--primary-green);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.learnMoreLink:hover {
+  color: var(--dark-green);
+}
+
+.pdfExtractContainer {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pdfExtractTitle {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--dark-green);
+}
+
+.pdfExtract {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 15px;
+  background-color: var(--background-light);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.disclaimerBox {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background-color: rgba(255, 193, 7, 0.1);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.disclaimerBox svg {
+  color: #ff9800;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* Info Section */
+.infoSection {
+  padding: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.infoTitle {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: var(--dark-green);
+  text-align: center;
+}
+
+.infoSteps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.infoStep {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--cream);
+  border-radius: 8px;
+}
+
+.infoStepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 15px;
+  background-color: var(--primary-green);
+  color: white;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.infoStep h3 {
+  margin-bottom: 10px;
+  color: var(--dark-green);
+}
+
+.infoStep p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .consultationPage {
+    padding: 30px 0;
+  }
+
+  .consultationContainer {
+    border-radius: 0;
+  }
+
+  .consultationTitle {
+    font-size: 1.8rem;
+  }
+
+  .consultationSubtitle {
+    font-size: 1rem;
+  }
+
+  .infoSteps {
+    flex-direction: column;
+  }
+
+  .recommendationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,204 @@
+.uploadPage {
+  padding: 60px 0;
+  background-color: var(--background-light);
+  min-height: calc(100vh - 200px);
+}
+
+.uploadContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.uploadHeader {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.uploadTitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.uploadSubtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.uploadForm {
+  padding: 30px;
+}
+
+.fileUploadContainer {
+  margin-bottom: 30px;
+}
+
+.fileUploadLabel {
+  display: block;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadBox {
+  border: 2px dashed var(--light-brown);
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  background-color: var(--cream);
+}
+
+.uploadBox:hover {
+  border-color: var(--primary-green);
+  background-color: rgba(248, 244, 227, 0.7);
+}
+
+.uploadPrompt {
+  color: var(--text-color);
+}
+
+.uploadText {
+  font-size: 1.1rem;
+  margin: 15px 0 10px;
+  font-weight: 500;
+}
+
+.uploadHint {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.filePreview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-green);
+}
+
+.fileName {
+  font-weight: 500;
+  margin: 10px 0 5px;
+  word-break: break-all;
+}
+
+.fileSize {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.formGroup {
+  margin-bottom: 25px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+.formTextarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--light-brown);
+  border-radius: 8px;
+  background-color: var(--cream);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--primary-green);
+}
+
+.errorMessage {
+  color: #e53935;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(229, 57, 53, 0.1);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.successText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.uploadInfo {
+  padding: 30px;
+  background-color: var(--cream);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.infoTitle {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--dark-green);
+}
+
+.infoSteps {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.infoSteps li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.privacyNote {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .uploadPage {
+    padding: 30px 0;
+  }
+
+  .uploadContainer {
+    border-radius: 0;
+  }
+
+  .uploadTitle {
+    font-size: 1.8rem;
+  }
+
+  .uploadSubtitle {
+    font-size: 1rem;
+  }
+}
+

@@ -1,0 +1,372 @@
+.remediesPage {
+  background-color: var(--background-light);
+}
+
+/* Hero Section */
+.remediesHero {
+  background-color: var(--primary-green);
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.remediesTitle {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.remediesSubtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uploadBtn {
+  background-color: white;
+  color: var(--primary-green);
+  font-size: 1.1rem;
+  padding: 15px 30px;
+}
+
+.uploadBtn:hover {
+  background-color: var(--cream);
+}
+
+/* Personalized Section */
+.personalizedSection {
+  background-color: white;
+}
+
+.personalizedContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--cream);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.personalizedHeader {
+  background-color: var(--dark-green);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.personalizedTitle {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.personalizedSubtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.placeholderContent {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.placeholderIcon {
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.placeholderTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--dark-green);
+}
+
+.placeholderText {
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Common Remedies Section */
+.commonRemediesSection {
+  background-color: var(--background-light);
+}
+
+.commonRemediesIntro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.remediesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.remedyCard {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.remedyCard:hover {
+  transform: translateY(-10px);
+}
+
+.remedyImage {
+  overflow: hidden;
+}
+
+.remedyImg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.remedyCard:hover .remedyImg {
+  transform: scale(1.05);
+}
+
+.remedyContent {
+  padding: 25px;
+}
+
+.remedyTitle {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--dark-green);
+}
+
+.remedyDesc {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.remedyUsage {
+  background-color: var(--cream);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.remedyUsage h4 {
+  margin-bottom: 10px;
+  color: var(--dark-green);
+  font-size: 1.1rem;
+}
+
+.remedyUsage ul {
+  padding-left: 20px;
+}
+
+.remedyUsage li {
+  margin-bottom: 5px;
+}
+
+.remedyLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--primary-green);
+  font-weight: 500;
+  transition: gap 0.3s ease;
+}
+
+.remedyLink:hover {
+  gap: 8px;
+}
+
+/* Lifestyle Section */
+.lifestyleSection {
+  background-color: var(--cream);
+}
+
+.lifestyleIntro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.lifestyleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.lifestyleCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.lifestyleCard:hover {
+  transform: translateY(-5px);
+}
+
+.lifestyleIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.lifestyleTitle {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--dark-green);
+  text-align: center;
+}
+
+.lifestyleDesc {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.lifestyleTips {
+  padding-left: 20px;
+}
+
+.lifestyleTips li {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.lifestyleTips li::before {
+  content: "•";
+  color: var(--primary-green);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Download Section */
+.downloadSection {
+  background-color: white;
+}
+
+.downloadContainer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.downloadContent {
+  flex: 1;
+}
+
+.downloadTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--dark-green);
+}
+
+.downloadText {
+  margin-bottom: 30px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.downloadOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.downloadOption {
+  background-color: var(--cream);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.downloadOption h3 {
+  margin-bottom: 10px;
+  color: var(--dark-green);
+}
+
+.downloadImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mockupImg {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.remediesCta {
+  background-color: var(--light-green);
+  padding: 80px 0;
+  color: white;
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .downloadContainer {
+    flex-direction: column;
+  }
+
+  .downloadImage {
+    order: -1;
+  }
+
+  .remediesTitle {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .remediesTitle {
+    font-size: 2rem;
+  }
+
+  .remediesSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .downloadOptions {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaTitle {
+    font-size: 1.8rem;
+  }
+
+  .ctaText {
+    font-size: 1.1rem;
+  }
+}
+
